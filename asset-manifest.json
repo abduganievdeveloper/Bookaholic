@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bookaholicp/static/css/main.a4f515b5.chunk.css",
+    "main.js": "/bookaholicp/static/js/main.9c4f760a.chunk.js",
+    "main.js.map": "/bookaholicp/static/js/main.9c4f760a.chunk.js.map",
+    "runtime~main.js": "/bookaholicp/static/js/runtime~main.49bc5d7a.js",
+    "runtime~main.js.map": "/bookaholicp/static/js/runtime~main.49bc5d7a.js.map",
+    "static/js/2.2f26353c.chunk.js": "/bookaholicp/static/js/2.2f26353c.chunk.js",
+    "static/js/2.2f26353c.chunk.js.map": "/bookaholicp/static/js/2.2f26353c.chunk.js.map",
+    "index.html": "/bookaholicp/index.html",
+    "precache-manifest.b769c6f03e8a7c75a86584fdaff67864.js": "/bookaholicp/precache-manifest.b769c6f03e8a7c75a86584fdaff67864.js",
+    "service-worker.js": "/bookaholicp/service-worker.js",
+    "static/css/main.a4f515b5.chunk.css.map": "/bookaholicp/static/css/main.a4f515b5.chunk.css.map"
+  }
+}
