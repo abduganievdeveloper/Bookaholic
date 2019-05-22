@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Fragment} from 'react';
 import './App.css';
+import Welcome from './views/Welcome'
 
-function App() {
+import withStyles from '@material-ui/core/styles/withStyles'
+import Navbar from './MyComponents/Navbar'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+
+const styles={
+   main:{
+     padding:'0 15px'
+   }
+}
+
+
+const App=(props)=>{
+  const {classes}=props
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Fragment>
+    <Navbar/>
+    <div className={classes.main}>
+      <BrowserRouter basename="/rchat">
+        <Switch>
+          <Route path="/" component={Welcome} exact/>
+        </Switch>
+      </BrowserRouter>
+      
     </div>
+    </Fragment>
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
