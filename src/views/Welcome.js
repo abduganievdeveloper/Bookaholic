@@ -2,9 +2,10 @@ import React from 'react'
 import Navbar from '../MyComponents/Navbar'
 import Login from '../MyComponents/Login'
 
-const Welcome=()=>{
+const Welcome=(props)=>{
+    
     return(<div>
-        <Login/>
+        <Login setLogin={props.setLogin}/>
         </div>
     )
 }

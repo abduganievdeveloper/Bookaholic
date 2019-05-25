@@ -7,4 +7,34 @@ background-position: center;
 background-size:cover;
 margin:0;
 }
-background-image: radial-gradient( circle 300px at 27.7% -15.7%,  rgba(18,246,246,1) 0%, rgba(7,103,233,1) 73.9% );
+.rotate-enter {
+  transform: rotateY(180deg);
+}
+.rotate-appear {
+  transform: rotateY(720deg);
+}
+
+.rotate-appear.rotate-appear-active {
+ transform: rotateY(0);
+  transition: transform .5s ease-in;
+}
+
+/* end enter state */
+.rotate-enter.slide-enter-active {
+  transform: rotateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+/* start leave state */
+.rotate-leave {
+ transform: rotateY(0);
+}
+
+/* end leave state */
+.rotate-leave.rotate-leave-active {
+  transform: rotateY(-90deg);
+  transition: transform 0.5s ease-in;
+}
+.icon > * {
+  pointer-events: none;
+}
